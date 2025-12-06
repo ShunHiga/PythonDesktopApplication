@@ -1,0 +1,11 @@
+[
+  "if not values[\"-history-\"]:\n\t\t\tcontinue\n\t\telse:",
+  "values[\"-history-\"]",
+  "print(index)",
+  "#削除ボタンを押したら履歴を削除\n\tif event == \"削除\":\n\t\t#選択された履歴インデックスを取得\n\t\tsel_text = values[\"-history-\"][0]\n\t\t#実際のデータを取り出す\n\t\tindex = int(sel_text[0:2])\n\t\tdel history[index - 1]\n\t\twindow[\"-history-\"].update(list_format(history))\n\t\tsave_history()\n\t\tpyperclip.copy(\"\") #重複登録しないようにクリア\n\t\tsg.popup(\"削除しました\")",
+  "layout = [",
+  "print(\"終了\")",
+  "sg.popup(\"クリップボードにコピーしました\")",
+  "\t\t#選択された履歴をクリップボードにコピー\n",
+  "\n\n#ウィンドウを作成する"
+]
